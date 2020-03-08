@@ -1,4 +1,4 @@
-import FuseSearch from '@fuse/core/FuseSearch';
+// import FuseSearch from '@fuse/core/FuseSearch';
 import FuseShortcuts from '@fuse/core/FuseShortcuts';
 import AppBar from '@material-ui/core/AppBar';
 import Hidden from '@material-ui/core/Hidden';
@@ -52,9 +52,9 @@ function ToolbarLayout1(props) {
 
 						<div className={classes.separator} />
 
-						<FuseSearch />
+						{/* <FuseSearch /> */}
 
-						<div className={classes.separator} />
+						{/* <div className={classes.separator} /> */}
 
 						<LanguageSwitcher />
 
