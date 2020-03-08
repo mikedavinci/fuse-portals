@@ -110,34 +110,54 @@ function ContactsList(props) {
 						sortable: false
 					},
 					{
-						Header: 'First Name',
+						Header: 'Ticker',
 						accessor: 'name',
 						filterable: true,
 						className: 'font-bold'
 					},
 					{
-						Header: 'Last Name',
+						Header: 'Name',
 						accessor: 'lastName',
 						filterable: true,
 						className: 'font-bold'
 					},
 					{
-						Header: 'Company',
+						Header: 'Volume',
 						accessor: 'company',
 						filterable: true
 					},
 					{
-						Header: 'Job Title',
+						Header: 'EMA',
 						accessor: 'jobTitle',
 						filterable: true
 					},
 					{
-						Header: 'Email',
+						Header: 'ADX',
 						accessor: 'email',
 						filterable: true
 					},
 					{
-						Header: 'Phone',
+						Header: 'Full-Stoch',
+						accessor: 'phone',
+						filterable: true
+					},
+					{
+						Header: 'MACD',
+						accessor: 'phone',
+						filterable: true
+					},
+					{
+						Header: 'RSI',
+						accessor: 'phone',
+						filterable: true
+					},
+					{
+						Header: 'CMF',
+						accessor: 'phone',
+						filterable: true
+					},
+					{
+						Header: 'SL',
 						accessor: 'phone',
 						filterable: true
 					},

@@ -35,7 +35,7 @@ function ContactsHeader(props) {
 					</FuseAnimate>
 					<FuseAnimate animation="transition.slideLeftIn" delay={300}>
 						<Typography variant="h6" className="mx-12 hidden sm:flex">
-							Contacts
+							Search
 						</Typography>
 					</FuseAnimate>
 				</div>
