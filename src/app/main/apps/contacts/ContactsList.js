@@ -1,6 +1,6 @@
 import FuseAnimate from '@fuse/core/FuseAnimate';
 import FuseUtils from '@fuse/utils';
-import Avatar from '@material-ui/core/Avatar';
+// import Avatar from '@material-ui/core/Avatar';
 import Checkbox from '@material-ui/core/Checkbox';
 import Icon from '@material-ui/core/Icon';
 import IconButton from '@material-ui/core/IconButton';
@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactTable from 'react-table';
-import ContactsMultiSelectMenu from './ContactsMultiSelectMenu';
+// import ContactsMultiSelectMenu from './ContactsMultiSelectMenu';
 import * as Actions from './store/actions';
 
 function ContactsList(props) {
@@ -101,14 +101,14 @@ function ContactsList(props) {
 						sortable: false,
 						width: 64
 					},
-					{
-						Header: () => selectedContactIds.length > 0 && <ContactsMultiSelectMenu />,
-						accessor: 'avatar',
-						Cell: row => <Avatar className="mx-8" alt={row.original.name} src={row.value} />,
-						className: 'justify-center',
-						width: 64,
-						sortable: false
-					},
+					// {
+					// 	Header: () => selectedContactIds.length > 0 && <ContactsMultiSelectMenu />,
+					// 	accessor: 'avatar',
+					// 	Cell: row => <Avatar className="mx-8" alt={row.original.name} src={row.value} />,
+					// 	className: 'justify-center',
+					// 	width: 64,
+					// 	sortable: false
+					// },
 					{
 						Header: 'Ticker',
 						accessor: 'name',

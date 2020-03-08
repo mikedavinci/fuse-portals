@@ -31,11 +31,11 @@ function ContactsHeader(props) {
 
 				<div className="flex items-center">
 					<FuseAnimate animation="transition.expandIn" delay={300}>
-						<Icon className="text-32">account_box</Icon>
+						<Icon className="text-32">trending_up</Icon>
 					</FuseAnimate>
 					<FuseAnimate animation="transition.slideLeftIn" delay={300}>
 						<Typography variant="h6" className="mx-12 hidden sm:flex">
-							Search
+							Refresh
 						</Typography>
 					</FuseAnimate>
 				</div>
@@ -48,7 +48,7 @@ function ContactsHeader(props) {
 							<Icon color="action">search</Icon>
 
 							<Input
-								placeholder="Search for anything"
+								placeholder="Search by Ticker or Name "
 								className="flex flex-1 px-16"
 								disableUnderline
 								fullWidth

@@ -1,15 +1,15 @@
-import FuseAnimate from '@fuse/core/FuseAnimate';
+// import FuseAnimate from '@fuse/core/FuseAnimate';
 import FusePageSimple from '@fuse/core/FusePageSimple';
-import Fab from '@material-ui/core/Fab';
-import Icon from '@material-ui/core/Icon';
+// import Fab from '@material-ui/core/Fab';
+// import Icon from '@material-ui/core/Icon';
 import { makeStyles } from '@material-ui/core/styles';
 import withReducer from 'app/store/withReducer';
 import React, { useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import ContactDialog from './ContactDialog';
+// import ContactDialog from './ContactDialog';
 import ContactsHeader from './ContactsHeader';
 import ContactsList from './ContactsList';
-import ContactsSidebarContent from './ContactsSidebarContent';
+// import ContactsSidebarContent from './ContactsSidebarContent';
 import * as Actions from './store/actions';
 import reducer from './store/reducers';
 
@@ -25,6 +25,7 @@ const useStyles = makeStyles({
 function ContactsApp(props) {
 	const dispatch = useDispatch();
 
+	// eslint-disable-next-line
 	const classes = useStyles(props);
 	const pageLayout = useRef(null);
 
@@ -48,12 +49,12 @@ function ContactsApp(props) {
 				}}
 				header={<ContactsHeader pageLayout={pageLayout} />}
 				content={<ContactsList />}
-				leftSidebarContent={<ContactsSidebarContent />}
+				// leftSidebarContent={<ContactsSidebarContent />}
 				sidebarInner
 				ref={pageLayout}
 				innerScroll
 			/>
-			<FuseAnimate animation="transition.expandIn" delay={300}>
+			{/* <FuseAnimate animation="transition.expandIn" delay={300}>
 				<Fab
 					color="primary"
 					aria-label="add"
@@ -62,8 +63,8 @@ function ContactsApp(props) {
 				>
 					<Icon>person_add</Icon>
 				</Fab>
-			</FuseAnimate>
-			<ContactDialog />
+			</FuseAnimate> */}
+			{/* <ContactDialog /> */}
 		</>
 	);
 }
